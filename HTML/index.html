@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+          text-align:center;
+          background-color: rgb(102, 133, 160);
+        }
+        form {
+          letter-spacing: 1px;
+          font-size: 1.ch;
+        }
+        fieldset{
+          width: fit-content;
+          float:center;
+        }
+        </style>
+</head>
+<body>
+    <h2>Personal Information</h2>
+    <form action="/action_page.php" target="_blank">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" ><br><br>
+        <label for="p.no">phone number:</label><br>
+        <input type="int" id="p.no" name="phone number" ><br><br>
+    <fieldset>
+        <legend><strong>Choose one language</strong></legend>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+   </fieldset><br>
+   <label for="DEPTS">Choose a dept:</label>
+   <select id="DEPTS" name="cars">
+    <option value="mech">MECH</option>
+    <option value="cse">CSE</option>
+    <option value="EEE">EEE</option>
+    <option value="ECE">ECE</option>
+  </select><br><br>
+  <textarea name="message" rows="10" cols="30">About yourself</textarea>
+  <br><br>
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <button type="button" >GO</button><br><br>
+  <button type="submit">SUBMIT</button><br>
+  <br>
+   </form>
+</body>
+</html>
